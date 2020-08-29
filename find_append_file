@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Enter filename to check"
+read fileName
+
+# Условие, что заданный айл находится в текущей папке
+if [[ -f "$fileName" ]]
+then 
+    echo "$fileName exists"
+    # Write and append line of text to found file
+    echo "Enter the text that you want to append"
+    read fileText
+    echo "$fileText" >> $fileName
+else
+    echo "$fileName doesn't exist"
+fi

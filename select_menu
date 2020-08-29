@@ -1,0 +1,15 @@
+#!/bin/bash
+
+select car in TESLA BMW ROVER
+do
+    case $car in
+    BMW)
+        echo "Selected BMW";;
+    TESLA)
+        echo "Selected TESLA";;
+    ROVER)
+        echo "Selected ROVER";;
+    *)
+        echo "Error! Select again or CTRL+C";;
+    esac
+done

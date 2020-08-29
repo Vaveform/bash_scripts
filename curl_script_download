@@ -1,0 +1,4 @@
+#!/bin/bash
+
+url="http://ovh.net/files/10Mio.dat"
+curl -I ${url} 

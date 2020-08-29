@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+numbers=( 10, 12, 34, 4)
+cars=("BMW", "Toyouta", "Ferrari", "Porshe")
+for car in ${cars[@]}
+do
+    echo "$car"
+done
+
+#delete index
+unset cars[2]
+
+printf "%s\n" "${numbers[@]}"
+
+
+
+#print indexes
+echo "${!numbers[@]}"
+
+#size array
+echo "${#cars[@]}"
+
+#Add new element
+cars+=("Nissan")
+printf "%s\n" "${cars[@]}"
+
+#Slice
+echo "Slice of array"
+printf "%s\n" "${cars[@]:2:5}"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+echo "Input string to get size: "
+read string
+
+echo ${#string}
+
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Enter Decimal Number of your choice"
+read Dec
+
+echo -n "The decimal value of $Dec is : "
+echo "obase=16; ibase=10; $Dec" | bc

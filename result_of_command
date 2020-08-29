@@ -1,0 +1,10 @@
+#!/bin/bash
+
+result_of_command=$(sudo findmnt /dev/sdb4)
+if [[ -z $result_of_command ]]
+then
+    echo "disk/file exist"
+else
+    echo "Not found"
+fi
+echo "$result_of_command"

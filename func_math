@@ -1,0 +1,21 @@
+#!/bin/bash 
+
+function MathFunction()
+{
+    # result=0
+    local result=0
+    for i in {1..500..15}
+    do
+        #result=$(( result + i * 2 ));
+        (( result = result +  i * 2 ))
+        #echo "$result"
+    done
+    echo $result
+}
+
+# again string size
+# string="fsdfsdf"
+# echo "${#string}"
+
+res=$(MathFunction)
+echo "Resulting value: $res"

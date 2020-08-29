@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+result_of_command=$(sudo findmnt /dev/sdb4)
+if [[ -n $result_of_command ]] 
+then
+    cd /media/user/D/Ботаем
+else
+    sudo mount /dev/sdb4 /media/user/D
+    cd /media/user/D/Ботаем
+fi
+#cd /media/user/:D/Ботаем
+#exit
+exec bash

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Input first number: "
+read first
+echo "Input second number: "
+read second
+
+echo "Result of operations"
+echo "Sum: $(expr $first + $second )"
+echo "Substruct: $(expr $first - $second )"
+echo "Multiply: $(expr $first \* $second )"
+echo "Divide: $(expr $first / $second )"
+echo "4 mod 12: $(expr $second % $first )"

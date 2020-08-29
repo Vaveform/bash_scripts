@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "press any key to continue"
+
+while [ true ]
+do
+    # -t -сколько секунд ждать ввода
+    # -n -сколько символов счиать (в данном случае 3 - и будет
+    # засчитываться за ввод ($? - вернёт 0)
+    read -t 10 -n 3
+#echo $? - возвращает 0 если 3 символа были введены, иначе 147
+if [ $? = 0 ]
+then 
+    echo "you have treminated the script"
+    exit;
+else
+    echo "waiting for you to press key sir!!!"
+fi
+done

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Input directory which you want spy"
+read path
+
+# can be inotify -m
+inotifywait -m $path > log_inotify_file
